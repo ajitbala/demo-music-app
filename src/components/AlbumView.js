@@ -20,7 +20,8 @@ const AlbumView = ({...props}) => {
             categories:state.albumReducer.categories,
             filterData:state.albumReducer.filteredData,
             selectedCategory:state.albumReducer.selectedCategory,
-            dateFilter : state.albumReducer.isDateFilter
+            dateFilter : state.albumReducer.isDateFilter,
+            isLoading: state.albumReducer.isLoading,
         }
     }, shallowEqual)
 
@@ -126,8 +127,23 @@ const AlbumView = ({...props}) => {
             </div>
           </main>
           {/* {togggleDetailsWindow && <ModalView album={selectedAlbum} togggleDetailsWindow={setTogggleDetailsWindow}/>} */}
+            {store.isLoading && <Loader />}
         </React.Fragment>
     )
 }
 
+const Loader = () => {
+    return (
+        <React.Fragment>
+            <div class="d-flex justify-content-center">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+            <div class="modal-backdrop fade show"></div>
+        </React.Fragment>
+        
+    )
+}
+ 
 export default AlbumView;
