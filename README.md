@@ -19,8 +19,9 @@ You will also see any lint errors in the console.
 2) Filter by Category.
 3) Filter by Release Month.
 4) Ability to Like/Favourite a Album.
-5) Reponsive in Nature.
-6) Used Hooks for react and redux.
+5) Ability to view more details about the Album.
+6) Reponsive in Nature.
+7) Used Hooks for react and redux.
 
 5) Surprise Feature : Ability to create playlist and add albums to playlist.
 
@@ -39,8 +40,10 @@ You will also see any lint errors in the console.
     a. User can click on the "Heart" shape to like an album.\
     b. If users wants to see list of all Liked albums, user can click on "Liked Songs" from left plane to redirect to favourites page.\
     c. Search is enabled for this page.
+    
+3) User can see more detials about the album by clicking on "..." button on Album.
 
-3) User can add a album to a playlist.\
+4) User can add a album to a playlist.\
     a. First navigate to Playlist page by clicking on "Playlist" from left pane.\
     b. Click on Create playlist button to create a new playlist.\
     c. if playlist is not unique, while saving it will display the error.\
